@@ -64,8 +64,8 @@
           <div class="col-lg-10">
             <h2>About Me | My Coding Journey</h2>
             <p class="lead mb-5">
-              My name is Matt Harten. I started learning code thanks to a
-              recommendation from a long time friend and mentor in mid 2022.
+              I'm Matt Harten. I started learning to code thanks to a
+              recommendation from a life-long friend and mentor in mid 2022.
             </p>
             <p class="lead mb-5">
               I started with Mosh Hamedani's Python Mastery course alongside my
@@ -249,16 +249,38 @@
         >
       </div>
     </section>
-    <!-- Map-->
-    <div class="map" id="contact">
-      <iframe
-        src="https://www.google.com/maps/@32.6840561,-114.6377108,16z"
-      ></iframe>
-      <br />
-      <small
-        ><a href="https://www.google.com/maps/@32.6840561,-114.6377108,16z"></a
-      ></small>
-    </div>
+    <!-- Contact Me-->
+    <div class="container" id="Contact">
+        <div style="text-align:center">
+          <h2>Contact Me</h2>
+          <p>Have a project idea or a job opportunity? Let me know:</p>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="/w3images/map.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="country">Region</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">North America</option>
+                <option value="usa">Middle East</option>
+                <option value="usa">Europe</option>
+                <option value="usa">Asia</option>
+                <option value="usa">Africa</option>
+              </select>
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
     <!-- Footer-->
     <footer class="footer text-center">
       <div class="container px-4 px-lg-5">
