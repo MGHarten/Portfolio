@@ -11587,21 +11587,23 @@ input[type=submit]:hover {
 
 /* Style the container/contact section */
 .contact-container {
-  border-radius: 5px;
+  margin:auto;
+  width: 60%;
+  border-radius: 10px;
   background-color: #f2f2f2;
   padding: 10px;
 }
 
 .contact-column {
-  width: 40%;
   float: left;
+  width: 50%;
   margin-top: 6px;
   background: color #f2f2f2;
-  padding: 20px;
+  padding: 10px;
 }
 
 .contact-row:after {
-  content:"";
+  content: "";
   display: table;
   clear: both;
 }
