@@ -11576,7 +11576,7 @@ footer.footer .social-link:hover {
 }
 
 /* Style inputs */
-.contact input[type=text], select, textarea {
+.Contactme input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -11585,7 +11585,7 @@ footer.footer .social-link:hover {
   resize: vertical;
 }
 
-.contact input[type=submit] {
+.Contactme input[type=submit] {
   background-color: #04AA6D;
   color: white;
   padding: 12px 20px;
@@ -11593,7 +11593,7 @@ footer.footer .social-link:hover {
   cursor: pointer;
 }
 
-.contact input[type=submit]:hover {
+.Contactme input[type=submit]:hover {
   background-color: #45a049;
 }
 
