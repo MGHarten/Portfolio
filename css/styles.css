@@ -11571,12 +11571,12 @@ footer.footer .social-link:hover {
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
-* {
+/* {
   box-sizing: border-box;
 }
 
 /* Style inputs */
-input[type=text], select, textarea {
+.contact input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -11585,7 +11585,7 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-input[type=submit] {
+.contact input[type=submit] {
   background-color: #04AA6D;
   color: white;
   padding: 12px 20px;
@@ -11593,7 +11593,7 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+.contact input[type=submit]:hover {
   background-color: #45a049;
 }
 
