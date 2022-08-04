@@ -191,7 +191,7 @@
                                 <p class="mb-0">TBA</p>
                             </div>
                         </div>
-                        <img class="img-fluid" src=url("../assets/img/portfolio-3.jpg") alt="..." />
+                        <img class="img-fluid" src="assets/img/portfolio-3.jpg" alt="..." />
                     </a>
                 </div>
                 <div class="col-lg-6">
@@ -250,47 +250,52 @@
     </section>
     <!-- Slideshow-->
     <section class="content-section bg-primary text-white">
-        <div id="slideshow-example" data-component="slideshow">
-            <div role="list">
-                <div class="slide">
-                    <img src="/assets/img/profile.webp" alt="Alcatraz">
+        <div class="content-section-heading text-center">
+            <h2 class="mb-5">
+                A glance at my life:
+            </h2>
+            <div>
+                <div id="slideshow-example" data-component="slideshow">
+                    <div role="list">
+                        <div class="slide">
+                            <img src="/assets/img/profile.webp" alt="Alcatraz">
+                        </div>
+                        <div class="slide">
+                            <img src="/assets/img/pupchair.webp" alt="Pup Assist Device">
+                        </div>
+                        <div class="slide">
+                            <img src="/assets/img/scuba2.webp" alt="First scuba leg by Ashley White">
+                        </div>
+                        <div class="slide">
+                            <img src="/assets/img/bigasstree.webp" alt="General Sherman - Great Sequoia">
+                        </div>
+                        <div class="slide">
+                            <img src="/assets/img/motorcycle.webp" alt="Ducati 1198S">
+                        </div>
+                    </div>
                 </div>
-                <div class="slide">
-                    <img src="/assets/img/pupchair.webp" alt="Pup Assist Device">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/scuba2.webp" alt="First scuba leg by Ashley White">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/bigasstree.webp" alt="General Sherman - Great Sequoia">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/motorcycle.webp" alt="Ducati 1198S">
-                </div>
-            </div>
-        </div>
-        <script>
-            var slideshows = document.querySelectorAll('[data-component="slideshow"]');
-            slideshows.forEach(initSlideShow);
+                <script>
+                    var slideshows = document.querySelectorAll('[data-component="slideshow"]');
+                    slideshows.forEach(initSlideShow);
 
-            function initSlideShow(slideshow) {
+                    function initSlideShow(slideshow) {
 
-                var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`);
+                        var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`);
 
-                var index = 0, time = 5000;
-                slides[index].classList.add('active');
+                        var index = 0, time = 5000;
+                        slides[index].classList.add('active');
 
-                setInterval(() => {
-                    slides[index].classList.remove('active');
+                        setInterval(() => {
+                            slides[index].classList.remove('active');
 
-                    index++;
-                    if (index === slides.length) index = 0;
+                            index++;
+                            if (index === slides.length) index = 0;
 
-                    slides[index].classList.add('active');
+                            slides[index].classList.add('active');
 
-                }, time);
-            }
-        </script>
+                        }, time);
+                    }
+                </script>
     </section>
     <!-- Footer-->
     <footer class="footer text-center">
@@ -309,7 +314,8 @@
                             class="icon-social-github"></i></a>
                 </li>
             </ul>
-            <p class="text-muted small mb-0">Copyright &copy; Matt Harten 2022</p>
+            <p class="text-muted small mb-0">Copyright &copy; Matt Harten 2022
+            </p>
         </div>
     </footer>
     <!-- Scroll to Top Button-->
