@@ -1,22 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Matt Harten - Contact Me</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Simple line icons-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
-        rel="stylesheet" />
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
-        rel="stylesheet" type="text/css" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-</head>
+<body lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Matt Harten - Contact Me</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
+            rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+            rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Website Name</h1>
+            <h2>Slogan</h2>
+            <navbar>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </navbar>
+        </div>
+
+        <div id="contactForm" class="contactForm">
+            <a id="closeBtn" onclick="closeForm()" href="javascript:void();"><i class="fa fa-times"></i></a>
+            <h3>Contact Us</h3>
+            <!-- TODO: adjust form to match my needs -->
+            <form method="POST"
+                action="https://docs.google.com/forms/u/4/d/e/1FAIpQLScd_QpMNxKcaklMsZG-hR_cLH0WGqUFrGVttnwEJ7BNOE5FGg/formResponse"
+                target="_self" id="form">
+                <input type="text" id="firstName" name="entry.149572740" placeholder="First Name" required>
+                <input type="text" id="lastName" name="entry.1313901978" placeholder="Last Name" required>
+                <input type="email" id="email" name="entry.1628783772" placeholder="Enter Your Email" required>
+                <p style="margin-top: 10px; margin-bottom: 10px; font-size: 14px;">How can I assist you?</p>
+                <input type="radio" name="entry.741190037" id="cbox" value="Web Design & Development">Web Design &
+                Development<br>
+                <input type="radio" name="entry.741190037" id="cbox" value="Digital Marketing">Digital Marketing<br>
+                <input type="radio" name="entry.741190037" id="cbox" value="Email Marketing">Email Marketing<br>
+                <input type="radio" name="entry.741190037" id="cbox" value="SEO">SEO<br>
+                <input type="radio" name="entry.741190037" id="cbox" value="Other">Other<br>
+                <button type="submit" id="btn" name="submit">Submit</button>
+            </form>
+        </div>
+        <!--  TODO: select new image for background of contact me page-->
+        <div class="main-section">
+            <img class="bg-img"
+                src="https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" />
+        </div>
+    </body>
+    <script>
+        let closeForm = function () {
+            let form = document.getElementById('contactForm');
+            let open = true;
+
+            form.style.display = "block";
+
+            if (open == true) {
+                form.style.display = "none";
+                open = false;
+            }
+        }
+    </script>

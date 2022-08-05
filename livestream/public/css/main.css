@@ -1,0 +1,170 @@
+body {
+  color: #283149;
+  font-family: Proxima Nova,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+  font-feature-settings: "kern","liga","pnum";
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+.btn-custom {
+  background-color: #283149;
+  color: #f73859;
+}
+.btn-custom-remote {
+  background-color: #283149;
+  color: #f73859;
+}
+nav {
+  text-shadow: 0 0 5px #e25068;
+}
+.nav-custom {
+  background-color: #283149;
+}
+.nav-custom-remote {
+  background-color: #283149;
+}
+.fa-circle {
+  text-shadow: 0 0 5px #3d9e10;
+}
+.icon-color, a {
+  color: #f73859;
+}
+a:hover {
+  color: #c4203b;
+}
+video {
+  width: 100%;
+  border: 1px solid rgba(0,0,0,.1);
+}
+.modal {
+  background-color: rgba(20, 17, 17, 0.5);
+}
+#vid {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(0,0,0,.1);
+}
+
+#vid > video {
+  height: inherit;
+  width: inherit;
+}
+
+img[alt*="sketchpad.pro"] {
+  visibility: hidden;
+}
+
+#messages{
+  height: 50vh;
+  border-left: 1px solid rgba(0,0,0,.1);
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+#messages li {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+.sendMsgForm {
+  position: relative;
+  top: 0;
+  right: 0;
+}
+#currentStream > video {
+ width: 100%;
+}
+canvas {
+  box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+}
+#sketchpad {
+  right: 0;
+  width: 100%;
+  height: 65vh;
+  border:1px solid rgba(128, 128, 128, 1);
+  box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+footer {
+  margin-top: 5rem;
+}
+
+footer a{
+  color: #283149;
+}
+footer a:hover {
+  color: #f73859;
+}
+
+.bg-footer a {
+  color: #f73859;
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  color: #404b69;
+  z-index: -9999;
+}
+
+#startCanvasStream:hover .centered {
+  color: #f73859;
+}
+
+.loading {
+  position: fixed;
+  z-index: 1060;
+  height: 2em;
+  width: 2em;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* Transparent Overlay */
+.loading:before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 17, 17, 0.5);
+
+}
+
+@media only screen and (min-width: 992px) {
+  hr {
+    margin-top: 0.2rem;
+  }
+  .desc p {
+    margin-bottom: 0.2rem;
+  }
+  .alert {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+  #toolshed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 0.2rem;
+    z-index: 99;
+  }
+  #toolshed {
+    box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+  }
+  #toolshed p {
+    margin: 0;
+  }
+  .alert {
+    max-width: fit-content;
+  }
+  .centered {
+    top: 50%;
+  }
+}

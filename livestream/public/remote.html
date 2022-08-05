@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StreamMyPC | Remote </title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sketchpad/0.1.0/styles/sketchpad.css">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <style>
+    .modal {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark nav-custom-remote">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="fa fa-play-circle fa-lg icon-color"></i> Stream<span class="icon-color">MyPC</span> | <small>Remote Screen</small></a>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link text-white"><i class="far fa-user icon-color"></i> <b><span id="currentUser"></span></b></a>
+      </li>
+    </ul>
+    </nav>
+  <main>
+    <div class="container">
+      <p class="mt-1">Create your Own Stream at <span id="link"></span></p>
+      <p class="mb-0 alert alert-primary">Watch a remote stream - <b>Ensure you have a valid link from Host User.</b></p>
+      <div>
+        <small id="message"></small>
+        <small id="socketMessage"></small>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-8">
+          <!-- <video controls autoplay></video> -->
+          <div id="vid" style="height: 400px; background: transparent url('https://www.pngkey.com/png/detail/43-439069_play-button-white-smiley-face-black-background.png') 50% 50% / cover no-repeat ;">
+          </div>
+          <div id="aud"></div>
+        </div>
+        
+        <div class="col-md-4" id="messagesDiv">
+          <div>
+            <span class="text-success mb-0"><i class="fa fa-circle"></i> Live chat</span> -
+            <small class="text-secondary">Send messages to connected users</small>
+          </div>
+          <div id="messages" class="overflow-auto">
+          </div>
+          <form class="sendMsgForm mt-2" id="sendMsgForm">
+            <div class="form-group row p-1">
+              <div class="col-10 p-0">
+                <input type="text" class="form-control" id="chatMessageInput" placeholder="Type your message here" autocomplete="off">
+              </div>
+              <button class="col-2 btn btn-secondary p-0 btn-custom-remote" type="submit"><i class="fas fa-paper-plane"></i></button>
+            </div> 
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Enter Username to join Stream</h5>
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button> -->
+          </div>
+          <form id='usernameForm'>
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="username "><i class="far fa-user"></i> Username</label>
+                <input type="text" class="form-control" id="usernameInput" placeholder="Enter Username" required>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn text-light btn-custom-remote">Save changes</button>
+              <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="loading display-4 icon-color">Loading...</div>
+  </main>
+</body>
+
+<!-- Footer -->
+<footer class="page-footer font-small bg-light">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 pt-5 pb-2">
+        <div class="mb-5 text-center">
+
+          <!-- Twitter -->
+          <a class="tw-ic" href="https://twitter.com/GodwinAgedah" target="_blank">
+            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic" href="https://github.com/Godwin9911" target="_blank">
+            <i class="fab fa-github fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic" href="https://www.linkedin.com/in/godwin-agedah/" target="_blank">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Email-->
+          <a class="ins-ic" href="mailto:agedah99@gmail.com">
+            <i class="fas fa-envelope fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 bg-footer">
+    Created by <b>Godwin Agedah</b><br>
+    #Twiliohackhaton
+    <a href="https://godwinagedah.com.ng/" target="_blank"> godwinagedah.com.ng</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+<script src="/js/remoteBundle.js" ></script>
+</html>
