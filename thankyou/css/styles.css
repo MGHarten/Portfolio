@@ -1,0 +1,370 @@
+/*
+ * Global Styles
+ */
+
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+
+/*
+ * Header Styles
+ */
+
+
+.header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+
+    h1 {
+        font-size: 2em;
+        margin-bottom: 0;
+    }
+
+    p {
+        font-size: 1.2em;
+        margin-top: 0;
+    }
+
+    a {
+        color: #333;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    a:active {
+        color: #333;
+    }
+
+    a:visited {
+        color: #333;
+    }
+
+    a:focus {
+        outline: none;
+    }
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+.thankyou {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ccc;
+  padding: 20px;
+  margin-top: 20px;
+}
+.thankyou h1 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0;
+}
+.thankyou p {
+  margin: 0;
+}
+.thankyou .success {
+  color: #468847;
+  font-weight: bold;
+}
+.thankyou .error {
+  color: #b94a48;
+  font-weight: bold;
+}
+.thankyou .error-detail {
+  color: #b94a48;
+}
+.thankyou .posted {
+  font-size: 0.8em;
+  font-style: italic;
+}
+.thankyou .form-group {
+  margin-bottom: 10px;
+}
+.thankyou label {
+  margin-bottom: 10px;
+}
+.thankyou .form-control {
+  margin-bottom: 10px;
+}
+.thankyou .help-block {
+  margin-bottom: 10px;
+}
+.thankyou .btn {
+  margin-bottom: 10px;
+}
+.thankyou .btn-default {
+  background-color: #fff;
+  border-color: #ccc;
+}
+.thankyou .btn-default:hover {
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.thankyou .btn-primary {
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+.thankyou .btn-primary:hover {
+  background-color: #3071a9;
+  border-color: #285e8e;
+}
+.thankyou .btn-success {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.thankyou .btn-success:hover {
+  background-color: #449d44;
+  border-color: #398439;
+}
+.thankyou .btn-info {
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+.thankyou .btn-info:hover {
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+.thankyou .btn-warning {
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.thankyou .btn-warning:hover {
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+.thankyou .btn-danger {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.thankyou .btn-danger:hover {
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+.thankyou .btn-link {
+  color: #428bca;
+}
+.thankyou .btn-link:hover {
+  color: #2a6496;
+}
+.thankyou .thumbnail {
+  margin-bottom: 20px;
+  padding: 0;
+  border: none;
+}
+.thankyou .thumbnail img {
+  width: 100%;
+  height: auto;
+}
+.thankyou .thumbnail .caption {
+  padding: 9px;
+  color: #333;
+}
+.thankyou .alert {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 15px;
+  margin-top: 0;
+}
+.thankyou .alert h4 {
+  margin-top: 0;
+  color: inherit;
+}
+.thankyou .alert .alert-link {
+  font-weight: bold;
+}
+.thankyou .alert-danger {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+}
+.thankyou .alert-danger hr {
+  border-color: #d2b4b7;
+}
+.thankyou .alert-danger .alert-link {
+  color: #843534;
+}
+.thankyou .alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #3c763d;
+}
+.thankyou .alert-success hr {
+  border-color: #c9e2b3;
+}
+.thankyou .alert-success .alert-link {
+  color: #2b542c;
+}
+.thankyou .alert-info {
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  color: #31708f;
+}
+.thankyou .alert-info hr {
+  border-color: #a6e1ec;
+}
+.thankyou .alert-info .alert-link {
+  color: #245269;
+}
+.thankyou .alert-warning {
+  background-color: #fcf8e3;
+  border-color: #fbeed5;
+  color: #8a6d3b;
+}
+.thankyou .alert-warning hr {
+  border-color: #f7e1b5;
+}
+.thankyou .alert-warning .alert-link {
+  color: #66512c;
+}
+.thankyou .alert-danger {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+}
+.thankyou .alert-danger hr {
+  border-color: #e4b9c0;
+}
+.thankyou .alert-danger .alert-link {
+  color: #843534;
+}
+.thankyou .progress {
+  margin-bottom: 20px;
+}
+.thankyou .progress-bar {
+  float: left;
+  width: 0;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #428bca;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -webkit-transition: width 0.6s ease;
+  -o-transition: width 0.6s ease;
+  transition: width 0.6s ease;
+}
+.thankyou .progress-striped .progress-bar {
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    transparent 75%,
+    transparent
+  );
+  -webkit-background-size: 40px 40px;
+  background-size: 40px 40px;
+}
+.thankyou .progress.active .progress-bar {
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
+  -o-animation: progress-bar-stripes 2s linear infinite;
+  animation: progress-bar-stripes 2s linear infinite;
+}
+.thankyou .progress-bar-success {
+  background-color: #5cb85c;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+//make h1 look like handwriting but white text
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2em;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+//make p look like handwriting but white text and 80% of the size of h1
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.content {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.background {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/background.svg)
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}

@@ -1,0 +1,51 @@
+#form_container {
+  padding: 15px 15px;
+  margin-top: 250px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+body {
+  background-color: #000;
+  background-image: url("images/stduio-2035349_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.upload-btn-wrapper input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+.footer p {
+  margin: 10px;
+}
+.footer p a {
+  color: white;
+  text-decoration: none;
+}
+.footer p a:hover {
+  color: #ddd;
+}
+.footer p a:active {
+  color: #ddd;
+}
+.footer p a:visited {
+  color: #ddd;
+}
