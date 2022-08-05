@@ -12021,3 +12021,8 @@ input[type="submit"]:hover {
 [data-component="slideshow"] .slide.active {
   display: block;
 }
+
+.contact-img {
+  max-width: 100%;
+  max-height: 100%;
+}
