@@ -1,118 +1,85 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-      }
+from tkinter import *
 
-      * {
-        box-sizing: border-box;
-      }
+# create a calculator
+window = Tk()
+window.geometry("225x275")
+window.title("Calculator")
 
-      /* Style inputs */
-      input[type="text"],
-      select,
-      textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        margin-top: 6px;
-        margin-bottom: 16px;
-        resize: vertical;
-      }
+//create buttons for calculator and assign them functions
 
-      input[type="submit"] {
-        background-color: #04aa6d;
-        color: white;
-        padding: 12px 20px;
-        border: none;
-        cursor: pointer;
-      }
 
-      input[type="submit"]:hover {
-        background-color: #45a049;
-      }
+def button_click(button):
+    global Equation
+    Equation = Equation + str(button)
+    input_bar_text.set(Equation)
 
-      /* Style the container/contact section */
-      .container {
-        border-radius: 5px;
-        background-color: #f2f2f2;
-        padding: 10px;
-      }
 
-      /* Create two columns that float next to eachother */
-      .column {
-        float: left;
-        width: 50%;
-        margin-top: 6px;
-        padding: 20px;
-      }
+def button_clear():
+    global Equation
+    Equation = ""
+    input_bar_text.set("")
 
-      /* Clear floats after the columns */
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
 
-      /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-      @media screen and (max-width: 600px) {
-        .column,
-        input[type="submit"] {
-          width: 100%;
-          margin-top: 0;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <h2>Contact Me</h2>
-    <p>Resize the browser window to see the effect.</p>
+def button_equals():
+    global Equation
+    result = str(eval(Equation))
+    input_bar_text.set(result)
+    Equation = ""
 
-    <div class="container">
-      <div style="text-align: center">
-        <h2>Contact Us</h2>
-        <p>Swing by for a cup of coffee, or leave us a message:</p>
-      </div>
-      <div class="row">
-        <div class="column">
-          <img src="/w3images/map.jpg" style="width: 100%" />
-        </div>
-        <div class="column">
-          <form action="/action_page.php">
-            <label for="fname">First Name</label>
-            <input
-              type="text"
-              id="fname"
-              name="firstname"
-              placeholder="Your name.."
-            />
-            <label for="lname">Last Name</label>
-            <input
-              type="text"
-              id="lname"
-              name="lastname"
-              placeholder="Your last name.."
-            />
-            <label for="country">Country</label>
-            <select id="country" name="country">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
-            </select>
-            <label for="subject">Subject</label>
-            <textarea
-              id="subject"
-              name="subject"
-              placeholder="Write something.."
-              style="height: 170px"
-            ></textarea>
-            <input type="submit" value="Submit" />
-          </form>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+
+# create input box for calculator
+Equation = ""
+input_bar_text = StringVar()
+
+# Input box setup
+
+input_frame = Frame(window, width=225).pack(side=TOP)
+
+input_box = Entry(input_frame, font=('arial', 18, 'bold'), text=input_bar_text)
+input_box.pack()
+
+# Buttons Frame
+
+button_frame = Frame(window, width=225, height=245)
+button_frame.pack()
+
+# Numeric Button Grid
+
+Button(button_frame, text="7", width=5, height=2, command=lambda: button_click(7)).grid(
+    row=1, column=0, padx=1, pady=1)
+Button(button_frame, text="8", width=5, height=2, command=lambda: button_click(8)).grid(
+    row=1, column=1, padx=1, pady=1)
+Button(button_frame, text="9", width=5, height=2, command=lambda: button_click(9)).grid(
+    row=1, column=2, padx=1, pady=1)
+Button(button_frame, text="*", width=5, height=2, command=lambda: button_click("*")).grid(
+    row=1, column=3, padx=1, pady=1)
+
+Button(button_frame, text="4", width=5, height=2, command=lambda: button_click(4)).grid(
+    row=2, column=0, padx=1, pady=1)
+Button(button_frame, text="5", width=5, height=2, command=lambda: button_click(5)).grid(
+    row=2, column=1, padx=1, pady=1)
+Button(button_frame, text="6", width=5, height=2, command=lambda: button_click(6)).grid(
+    row=2, column=2, padx=1, pady=1)
+Button(button_frame, text="-", width=5, height=2, command=lambda: button_click("-")).grid(
+    row=2, column=3, padx=1, pady=1)
+
+Button(button_frame, text="1", width=5, height=2, command=lambda: button_click(1)).grid(
+    row=3, column=0, padx=1, pady=1)
+Button(button_frame, text="2", width=5, height=2, command=lambda: button_click(2)).grid(
+    row=3, column=1, padx=1, pady=1)
+Button(button_frame, text="3", width=5, height=2, command=lambda: button_click(3)).grid(
+    row=3, column=2, padx=1, pady=1)
+Button(button_frame, text="+", width=5, height=2, command=lambda: button_click("+")).grid(
+    row=3, column=3, padx=1, pady=1)
+
+Button(button_frame, text="0", width=5, height=2, command=lambda: button_click(0)).grid(
+    row=4, column=0, padx=1, pady=1)
+Button(button_frame, text="C", width=5, height=2, command=button_clear).grid(
+    row=4, column=1, padx=1, pady=1)
+
+Button(button_frame, text="=", width=5, height=2, command=button_equals).grid(
+    row=4, column=2, padx=1, pady=1)
+Button(button_frame, text="/", width=5, height=2, command=lambda: button_click("/")).grid(
+    row=4, column=3, padx=1, pady=1)
+
+window.mainloop()
