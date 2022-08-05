@@ -11972,7 +11972,7 @@ textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
-  margin-top: 6px;
+  margin-top: 16px;
   margin-bottom: 16px;
   resize: vertical;
 }
@@ -11984,10 +11984,10 @@ input[type="submit"]:hover {
 /* Style the container/contact section */
 .contact-container {
   margin: auto;
-  width: 60%;
-  border-radius: 10px;
+  width: 69%; /* nice */
+  border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 10px;
+  padding: 5px;
 }
 
 .contact-column {
@@ -11995,7 +11995,7 @@ input[type="submit"]:hover {
   width: 50%;
   margin-top: 6px;
   background: color #f2f2f2;
-  padding: 10px;
+  padding: 6px;
 }
 
 .contact-row:after {
@@ -12025,4 +12025,8 @@ input[type="submit"]:hover {
 .scuba {
   max-width: 306px;
   max-height: 544px;
+  display: block;
+  margin: auto;
+  margin-top: 56px;
+  vertical-align: middle;
 }
